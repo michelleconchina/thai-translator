@@ -1,0 +1,10 @@
+{
+  "extraKnownMarketplaces": {
+    "tara": {
+      "source": { "source": "github", "repo": "michelleconchina/tara" }
+    }
+  },
+  "enabledPlugins": {
+    "tara@tara": true
+  }
+}

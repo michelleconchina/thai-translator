@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		9AE94AC8308CE639007FAACB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A997F48308646F300F4E91A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A997F4F308646F300F4E91A;
+			remoteInfo = "thai-translator";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		9A997F50308646F300F4E91A /* thai-translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "thai-translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE94AC4308CE639007FAACB /* thai-translatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "thai-translatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -29,10 +40,22 @@
 			path = "thai-translator";
 			sourceTree = "<group>";
 		};
+		9AE94AC5308CE639007FAACB /* thai-translatorTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "thai-translatorTests";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A997F4D308646F300F4E91A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE94AC1308CE639007FAACB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				9A997F52308646F300F4E91A /* thai-translator */,
+				9AE94AC5308CE639007FAACB /* thai-translatorTests */,
 				9A997F51308646F300F4E91A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				9A997F50308646F300F4E91A /* thai-translator.app */,
+				9AE94AC4308CE639007FAACB /* thai-translatorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,6 +108,29 @@
 			productReference = 9A997F50308646F300F4E91A /* thai-translator.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9AE94AC3308CE639007FAACB /* thai-translatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE94ACA308CE639007FAACB /* Build configuration list for PBXNativeTarget "thai-translatorTests" */;
+			buildPhases = (
+				9AE94AC0308CE639007FAACB /* Sources */,
+				9AE94AC1308CE639007FAACB /* Frameworks */,
+				9AE94AC2308CE639007FAACB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AE94AC9308CE639007FAACB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				9AE94AC5308CE639007FAACB /* thai-translatorTests */,
+			);
+			name = "thai-translatorTests";
+			packageProductDependencies = (
+			);
+			productName = "thai-translatorTests";
+			productReference = 9AE94AC4308CE639007FAACB /* thai-translatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -95,6 +143,10 @@
 				TargetAttributes = {
 					9A997F4F308646F300F4E91A = {
 						CreatedOnToolsVersion = 26.2;
+					};
+					9AE94AC3308CE639007FAACB = {
+						CreatedOnToolsVersion = 26.2;
+						TestTargetID = 9A997F4F308646F300F4E91A;
 					};
 				};
 			};
@@ -113,12 +165,20 @@
 			projectRoot = "";
 			targets = (
 				9A997F4F308646F300F4E91A /* thai-translator */,
+				9AE94AC3308CE639007FAACB /* thai-translatorTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9A997F4E308646F300F4E91A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE94AC2308CE639007FAACB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +195,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9AE94AC0308CE639007FAACB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AE94AC9308CE639007FAACB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A997F4F308646F300F4E91A /* thai-translator */;
+			targetProxy = 9AE94AC8308CE639007FAACB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		9A997F64308646F400F4E91A /* Debug */ = {
@@ -321,6 +396,48 @@
 			};
 			name = Release;
 		};
+		9AE94ACB308CE639007FAACB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DD7BPD5LT3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelle.thai-translatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thai-translator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/thai-translator";
+			};
+			name = Debug;
+		};
+		9AE94ACC308CE639007FAACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DD7BPD5LT3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.michelle.thai-translatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/thai-translator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/thai-translator";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -338,6 +455,15 @@
 			buildConfigurations = (
 				9A997F64308646F400F4E91A /* Debug */,
 				9A997F65308646F400F4E91A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE94ACA308CE639007FAACB /* Build configuration list for PBXNativeTarget "thai-translatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE94ACB308CE639007FAACB /* Debug */,
+				9AE94ACC308CE639007FAACB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -9,7 +9,7 @@ import SwiftUI
 struct ThaiTranslatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PhrasebookView()
         }
     }
 }

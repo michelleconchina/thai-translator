@@ -42,6 +42,17 @@ nonisolated enum PhraseCategory: String, Codable, CaseIterable, Sendable {
         case .emergency: "Emergency"
         }
     }
+
+    var systemImage: String {
+        switch self {
+        case .greetings: "hand.wave"
+        case .prices: "tag"
+        case .directions: "signpost.right"
+        case .taxi: "car"
+        case .food: "fork.knife"
+        case .emergency: "cross.case"
+        }
+    }
 }
 
 /// Sentence-final politeness particle, chosen by the speaker's gender.
@@ -62,6 +73,13 @@ nonisolated enum PoliteParticle: String, CaseIterable, Sendable {
         switch self {
         case .khrap: "khrap"
         case .kha: "kha"
+        }
+    }
+
+    var speaker: String {
+        switch self {
+        case .khrap: "male speaker"
+        case .kha: "female speaker"
         }
     }
 }

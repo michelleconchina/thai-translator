@@ -26,4 +26,10 @@ nonisolated struct PhraseLoader: Sendable {
             throw PhraseLoaderError.invalidData(String(describing: error))
         }
     }
+
+    /// Same as `load()`, but runs off the caller's actor so it never blocks the UI.
+    @concurrent
+    func loadInBackground() async throws -> [Phrase] {
+        try load()
+    }
 }
